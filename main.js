@@ -42,10 +42,9 @@ var paused = false;
 
 window.onload = function() {
   var ratio = window.devicePixelRatio || 1;
-  var help = document.getElementById('help');
 
   function onresize() {
-    var width = innerWidth - help.clientWidth;
+    var width = innerWidth;
     var height = innerHeight;
     gl.canvas.width = width * ratio;
     gl.canvas.height = height * ratio;
