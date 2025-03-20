@@ -59,7 +59,7 @@ window.onload = function() {
   }
 
   document.body.appendChild(gl.canvas);
-  gl.clearColor(0, 0, 0, 1);
+  gl.clearColor(0, 0, 0, 0);
 
   water = new Water();
   renderer = new Renderer();
@@ -278,3 +278,5 @@ window.onload = function() {
     gl.disable(gl.DEPTH_TEST);
   }
 };
+
+
